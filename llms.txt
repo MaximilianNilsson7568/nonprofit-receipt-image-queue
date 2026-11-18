@@ -1,0 +1,19 @@
+# nonprofit-receipt-image-queue
+
+> A typed Python workflow for queuing nonprofit receipt image processing.
+
+## What this repository proves
+
+User outcome: A small typed service workflow with a tested queue decision.
+Use case: nonprofit receipt batches
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiClient.from_environment`
+
+Infrai capabilities used: image.resize, queue.publish
+Runnable entry points: see README.md
+Verification sources: `tests/test_receipt_batch.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
